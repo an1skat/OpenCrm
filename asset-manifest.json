@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/OpenCrm/static/js/main.5a2cebc6.js",
+    "index.html": "/OpenCrm/index.html",
+    "main.5a2cebc6.js.map": "/OpenCrm/static/js/main.5a2cebc6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.5a2cebc6.js"
+  ]
+}
