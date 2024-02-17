@@ -1,0 +1,119 @@
+@import url("https://fonts.cdnfonts.com/css/rubik?styles=19495,19493");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+body {
+  font-family: "Rubik";
+}
+.register-section {
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+.container {
+  width: 639px;
+  margin: 0 auto;
+}
+.container > svg {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.register-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+  padding: 80px;
+  position: relative;
+  max-width: 639px;
+}
+.register-label {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  background-color: #fff;
+  color: #888;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 2px;
+}
+.register-input {
+  padding: 21px;
+  border-radius: 10px;
+  border: 1px solid #5a5a5a;
+  outline: none;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+  width: 100%;
+}
+.register-input:focus {
+  border: 1px solid #000;
+}
+.register-input:focus + .register-label {
+  color: #000;
+}
+.register-input::placeholder {
+  color: #bfbfbf;
+}
+.register-label:nth-child(2) {
+  top: 11.5%;
+}
+.register-label:nth-child(4) {
+  top: 24.3%;
+}
+.register-label:nth-child(6) {
+  top: 37%;
+}
+.register-label:nth-child(8) {
+  top: 49.8%;
+}
+.register-label:nth-child(10) {
+  top: 62.3%;
+}
+
+.register-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.register-btn {
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #4db02a;
+  border: none;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  transition: background-color 0.3s;
+}
+.register-btn:hover {
+  background-color: #3d8722;
+  cursor: pointer;
+}
+.register-text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.register-link {
+  color: #939393;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
