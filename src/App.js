@@ -1,6 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
+import Register from "./subpages/Register";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();
@@ -8,8 +9,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }

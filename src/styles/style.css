@@ -1,0 +1,79 @@
+@import url("https://fonts.cdnfonts.com/css/rubik?styles=19495,19493");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+:root {
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter";
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+footer {
+  padding: 20px;
+  background-color: #5a5a5a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer-link-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footer-link {
+  color: #bfbfbf;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+}
