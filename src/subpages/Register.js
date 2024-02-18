@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles/style.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
@@ -77,6 +77,7 @@ const Register = () => {
 
       console.log(response.data);
       console.log("User registered successfully");
+      navigate("/auth")
     } catch (err) {
       console.error(err);
     } finally {
@@ -153,7 +154,7 @@ const Register = () => {
             <p className="register-text">
               Уже есть аккаунт?
               <br />
-              <Link to="/login" className="register-link">
+              <Link to="/auth" className="register-link">
                 Войти
               </Link>
             </p>
