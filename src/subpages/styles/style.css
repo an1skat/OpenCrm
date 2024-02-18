@@ -3,9 +3,13 @@
 body {
   font-family: "Rubik";
 }
-.register-section {
+.register-section,
+.auth-section {
   padding-top: 40px;
-  padding-bottom: 55px;
+  padding-bottom: 56px;
+}
+.auth-section {
+  margin-bottom: 167px;
 }
 .container {
   width: 639px;
@@ -16,14 +20,22 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.register-title {
+.auth-section > .container > svg {
+  margin-bottom: 80px;
+}
+.register-title,
+.auth-title {
   text-align: center;
   font-size: 36px;
   font-weight: 500;
   line-height: normal;
   margin-bottom: 40px;
 }
-.register-form {
+.auth-title {
+  margin-bottom: 80px;
+}
+.register-form,
+.auth-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +48,8 @@ body {
   position: relative;
   max-width: 639px;
 }
-.register-label {
+.register-label,
+.auth-label {
   position: absolute;
   top: 0;
   left: 15%;
@@ -47,7 +60,8 @@ body {
   line-height: normal;
   padding: 0 2px;
 }
-.register-input {
+.register-input,
+.auth-input {
   padding: 21px;
   border-radius: 10px;
   border: 1px solid #5a5a5a;
@@ -56,20 +70,29 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
   width: 100%;
 }
-.register-input:focus {
+.register-input:focus,
+.auth-input:focus {
   border: 1px solid #000;
 }
-.register-input:focus + .register-label {
+.register-input:focus + .register-label,
+.auth-input:focus + .auth-label {
   color: #000;
 }
-.register-input::placeholder {
+.register-input::placeholder,
+.auth-input::placeholder {
   color: #bfbfbf;
 }
-.register-label:nth-child(2) {
+.register-label:nth-child(2){
   top: 11.5%;
+}
+.auth-label:nth-child(2){
+  top: 19.4%;
 }
 .register-label:nth-child(4) {
   top: 24.3%;
+}
+.auth-label:nth-child(4){
+  top: 40.7%;
 }
 .register-label:nth-child(6) {
   top: 37%;
@@ -81,14 +104,16 @@ body {
   top: 62.3%;
 }
 
-.register-container {
+.register-container,
+.auth-container {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
-.register-btn {
+.register-btn,
+.auth-btn {
   padding: 20px 40px;
   border-radius: 10px;
   background-color: #4db02a;
@@ -100,17 +125,20 @@ body {
   line-height: normal;
   transition: background-color 0.3s;
 }
-.register-btn:hover {
+.register-btn:hover,
+.auth-btn:hover {
   background-color: #3d8722;
   cursor: pointer;
 }
-.register-text {
+.register-text,
+.auth-text {
   color: #000;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
 }
-.register-link {
+.register-link,
+.auth-link {
   color: #939393;
   font-size: 12px;
   font-weight: 400;
