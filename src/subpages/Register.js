@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/style.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { Logo } from "../components/Svg";
+import { LogoSvg } from "../components/Svg";
 
 const Register = () => {
   const [formErrors, setFormErrors] = useState({});
@@ -88,7 +88,7 @@ const Register = () => {
   return (
     <section className="register-section">
       <div className="container">
-        <Logo />
+        <LogoSvg />
         <h2 className="register-title">Регистрация</h2>
         <form
           onSubmit={handleSubmit}
