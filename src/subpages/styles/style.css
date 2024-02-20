@@ -20,6 +20,9 @@ body {
   margin: 0 auto;
   margin-bottom: 40px;
 }
+.container > svg > path:not(:first-child) {
+  fill: #5a5a5a;
+}
 .auth-section > .container > svg {
   margin-bottom: 80px;
 }

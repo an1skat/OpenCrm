@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./styles/style.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { Logo } from "../components/Svg";
+import { LogoSvg } from "../components/Svg";
 import { useAuth } from "../utils/authContext.js";
 
 const Auth = () => {
@@ -49,7 +49,7 @@ const Auth = () => {
   return (
     <section className="auth-section">
       <div className="container">
-        <Logo />
+        <LogoSvg />
         <h2 className="auth-title">Аутентификация</h2>
         <form
           //   onSubmit={handleSubmit}
