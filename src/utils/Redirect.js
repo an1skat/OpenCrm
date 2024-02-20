@@ -1,4 +1,4 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-export const AuthRedirect = () => <Navigate to="/register" />;
+export const AuthRedirect = () => <Navigate to="/auth/me" />;
