@@ -175,5 +175,3 @@ export const SettingsSvg = () => {
     </svg>
   );
 };
-
-sfc
