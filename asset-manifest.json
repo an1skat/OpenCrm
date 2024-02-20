@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/OpenCrm/static/css/main.ca083662.css",
-    "main.js": "/OpenCrm/static/js/main.3c61ef01.js",
+    "main.css": "/OpenCrm/static/css/main.59676754.css",
+    "main.js": "/OpenCrm/static/js/main.098a0554.js",
     "index.html": "/OpenCrm/index.html",
-    "main.ca083662.css.map": "/OpenCrm/static/css/main.ca083662.css.map",
-    "main.3c61ef01.js.map": "/OpenCrm/static/js/main.3c61ef01.js.map"
+    "main.59676754.css.map": "/OpenCrm/static/css/main.59676754.css.map",
+    "main.098a0554.js.map": "/OpenCrm/static/js/main.098a0554.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca083662.css",
-    "static/js/main.3c61ef01.js"
+    "static/css/main.59676754.css",
+    "static/js/main.098a0554.js"
   ]
 }
