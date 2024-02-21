@@ -20,14 +20,16 @@ function App() {
         {!hide && <Navbar />}
 
         <Routes>
-          <Route path="/" element={<AuthRedirect />} />
-          <Route path="/auth/me" element={<AuthMe />} />
           <Route path="/home" element={<Home />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
-          <Route path="/register" element={<Register />} />
-          <Route path="/auth" element={<Auth />} />
+      <Routes>
+        <Route path="/" element={<AuthRedirect />} />
+        <Route path="/auth/me" element={<AuthMe />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/auth" element={<Auth />} />
+      </Routes>
 
       <Footer />
     </div>
