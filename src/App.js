@@ -7,6 +7,7 @@ import Register from "./subpages/Register";
 import Auth from "./subpages/Auth";
 import AuthMe from "./subpages/AuthMe";
 import { AuthRedirect } from "./utils/Redirect";
+import "./styles/style.css";
 
 function App() {
   const location = useLocation();
