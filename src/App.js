@@ -12,23 +12,27 @@ import "./styles/style.css";
 function App() {
   const location = useLocation();
 
-  const hide =
-    location.pathname === "/auth" || location.pathname === "/register";
+  // Переменная, которая будет управлять классами стилей
+  const containerClassName = !["/auth", "/register"].includes(location.pathname)
+    ? "flex-container"
+    : "block-container";
+
   return (
     <div className="App">
-      <div className="app-container">
-        {!hide && <Navbar />}
+      <div className={`app-container ${containerClassName}`}>
+        {containerClassName === "flex-container" && <Navbar />}
 
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
+
       <Routes>
-        <Route path="/" element={<AuthRedirect />} />
         <Route path="/auth/me" element={<AuthMe />} />
         <Route path="/register" element={<Register />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/" element={<AuthRedirect />} />
       </Routes>
 
       <Footer />

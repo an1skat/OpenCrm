@@ -52,8 +52,13 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.app-container {
+.flex-container {
   display: flex;
+}
+
+/* Стили для контейнера с display: block */
+.block-container {
+  display: block;
 }
 
 .navbar-section {
