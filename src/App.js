@@ -23,11 +23,11 @@ function App() {
           <Route path="/" element={<AuthRedirect />} />
           <Route path="/auth/me" element={<AuthMe />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/auth" element={<Auth />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </div>
+          <Route path="/register" element={<Register />} />
+          <Route path="/auth" element={<Auth />} />
 
       <Footer />
     </div>
