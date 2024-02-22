@@ -67,11 +67,11 @@ img {
   width: 280px;
   background-color: #073954;
 }
-.navbar-section > svg {
+.navbar-section > a > svg {
   width: 140px;
   padding-left: 25px;
 }
-.navbar-section > svg > path:not(:first-child) {
+.navbar-section > a > svg > path:not(:first-child) {
   fill: #fff;
 }
 .nav-list {

@@ -16,23 +16,41 @@ import { useAuth } from "../utils/authContext";
 import GetMe from "../utils/getMe";
 
 const Navbar = () => {
-  const { userFirstName, userLastName } = GetMe();
+  const { userFirstName, userLastName, userAvatar } = GetMe();
   const { isLogin } = useAuth();
   return (
     <section className="navbar-section">
-      <LogoSvg />
+      <Link to="/home" className="navbar-logo link">
+        <LogoSvg />
+      </Link>
       <nav className="nav">
         <ul className="nav-list list">
           <li className="nav-list-item">
-            <SmallAvatarSvg />
             {isLogin ? (
-              <Link to="/home" className="user-nav-link link">
-                {userFirstName} {userLastName}
-              </Link>
+              <>
+                {userAvatar ? (
+                  <img
+                    src={`http://localhost:8888/avatars/${userAvatar}`}
+                    alt="user avatar"
+                    width="26"
+                    height="26"
+                    style={{ borderRadius: "50%" }}
+                    className="user-nav-avatar"
+                  />
+                ) : (
+                  <SmallAvatarSvg />
+                )}
+                <Link to="/profile" className="user-nav-link link">
+                  {userFirstName} {userLastName}
+                </Link>
+              </>
             ) : (
-              <Link to="/home" className="user-nav-link link">
-                Иван Иванов
-              </Link>
+              <>
+                <SmallAvatarSvg />
+                <Link to="/profile" className="user-nav-link link">
+                  Иван Иванов
+                </Link>
+              </>
             )}
             <LogoutSvg />
           </li>
