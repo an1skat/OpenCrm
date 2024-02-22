@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Groups from "./pages/Groups";
 import Settings from "./pages/Settings";
 import Register from "./subpages/Register";
 import Auth from "./subpages/Auth";
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/groups" element={<Groups/>} />
         </Routes>
       </div>
 
