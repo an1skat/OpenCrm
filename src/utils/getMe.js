@@ -19,7 +19,7 @@ const GetMe = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-            "http://localhost:8888/get/me",
+            "https://opencrm-backend.onrender.com/get/me",
             {
                 headers: {
                     Authorization: `Bearer ${authToken}`,

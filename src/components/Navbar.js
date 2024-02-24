@@ -30,7 +30,7 @@ const Navbar = () => {
               <>
                 {userAvatar ? (
                   <img
-                    src={`http://localhost:8888/avatars/${userAvatar}`}
+                    src={`https://opencrm-backend.onrender.com/avatars/${userAvatar}`}
                     alt="user avatar"
                     width="26"
                     height="26"
@@ -40,9 +40,15 @@ const Navbar = () => {
                 ) : (
                   <SmallAvatarSvg />
                 )}
-                <Link to="/profile" className="user-nav-link link">
-                  {userFirstName} {userLastName}
-                </Link>
+                {userFirstName && userLastName ? (
+                  <Link to="/profile" className="user-nav-link link">
+                    {userFirstName} {userLastName}
+                  </Link>
+                ) : (
+                  <Link to="/profile" className="user-nav-link link">
+                    Иван Иванов
+                  </Link>
+                )}
               </>
             ) : (
               <>

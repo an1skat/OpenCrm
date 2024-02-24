@@ -34,7 +34,7 @@ const Register = () => {
           newFormErrors.email = "Некорректная почта";
         }
   
-        const nameRegex = /^[a-zA-Zа-яА-ЯёЁ]{3,20}$/;
+        const nameRegex = /^[a-zA-Zа-яА-ЯёЁ\s]{3,20}/;
         if (!nameRegex.test(formData.firstName)) {
           console.log("Incorrect firstname");
           newFormErrors.firstName =
@@ -46,6 +46,7 @@ const Register = () => {
             "Фамилия должна содержать от 3 до 20 буквенных символов";
         }
         if (!nameRegex.test(formData.surname)) {
+          console.log(formData.surname.length);
           console.log("Incorrect surname");
           newFormErrors.surname =
             "Отчество должно содержать от 3 до 20 буквенных символов";
@@ -60,6 +61,7 @@ const Register = () => {
       setFormErrors(newFormErrors);
 
       if (Object.keys(newFormErrors).length > 0) {
+        console.log("Form errors:", newFormErrors);
         console.log("Form has errors");
         setIsSubmitting(false);
         return;
