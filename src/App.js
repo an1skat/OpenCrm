@@ -9,6 +9,7 @@ import Auth from "./subpages/Auth";
 import AuthMe from "./subpages/AuthMe";
 import { AuthRedirect } from "./utils/Redirect";
 import "./styles/style.css";
+import Counterparties from "./pages/Counterparties";
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/groups" element={<Groups/>} />
+          <Route path="/counterparties" element={<Counterparties/>} />
         </Routes>
       </div>
 

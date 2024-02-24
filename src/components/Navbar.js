@@ -83,7 +83,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-list-item">
-            <Link to="/clients" className="nav-link link">
+            <Link to="/counterparties" className="nav-link link">
               <div className="nav-link-container">
                 <ShareSvg />
                 <p className="nav-link-text">Контрагенты</p>
