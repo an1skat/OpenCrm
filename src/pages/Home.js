@@ -80,7 +80,7 @@ const Home = () => {
                     width="80"
                     height="80"
                     style={{ borderRadius: "50%" }}
-                    src={`http://localhost:8888/avatars/${userAvatar}`}
+                    src={`https://opencrm-backend.onrender.com/avatars/${userAvatar}`}
                     alt="user avatar"
                     className="main-profile-info-avatar"
                   />
