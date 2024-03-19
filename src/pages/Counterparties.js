@@ -23,9 +23,85 @@ const Counterparties= () => {
           <input type="text" name="name" placeholder="Телефон, название...."className="counterparties-form-input" />
           <button type="submit" className="counterparties-form-btn">Искать</button>
           </form>
-        </section> 
+        </section>
+
         <section> 
-          
+          <table>
+            <thead>
+              <tr>
+                <th> Контрагент</th>
+                <th> Главный контакт</th>
+                 <th>Должность </th>
+                <th> Сделки</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td><p>2</p></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td><p>1</p></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>ИП Иванов Иван Иванович</td>
+                <td><a href="ИвановИванИванович">Иванов Иван Иванович</a></td>
+                <td><a href="ip.ivanov@nomail.com">ip.ivanov@nomail.com</a></td>
+                <td><p>Гендиректор</p></td>
+                <td><p>2</p></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </>
   );
