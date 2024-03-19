@@ -23,7 +23,8 @@ const Counterparties= () => {
           <input type="text" name="name" placeholder="Телефон, название...."className="counterparties-form-input" />
           <button type="submit" className="counterparties-form-btn">Искать</button>
           </form>
-        </section> 
+        </section>
+
         <section> 
           <table>
             <thead>
